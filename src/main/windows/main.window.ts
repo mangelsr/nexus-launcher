@@ -11,8 +11,9 @@ const createMainWindow = (): void => {
             preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
         },
     });
+    mainWindow.setMenu(null);
     mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
-    mainWindow.webContents.openDevTools();
+    // mainWindow.webContents.openDevTools();
 };
 
 export { createMainWindow };

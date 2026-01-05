@@ -1,0 +1,155 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 32px 16px;
+    gap: 32px;
+    background-color: var(--bg-secondary);
+}
+
+.sidebar-header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--border-radius-sm);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/31/Epic_Games_logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(1);
+}
+
+.logo-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text-primary);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 20px;
+    background: var(--bg-tertiary);
+    border: 1px solid transparent;
+    transition: border-color var(--transition-fast);
+}
+
+.search-container:focus-within {
+    border-color: var(--text-muted);
+}
+
+.search-icon {
+    color: var(--text-muted);
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    width: 100%;
+    outline: none;
+}
+
+.sidebar-nav {
+    flex: 1;
+}
+
+.nav-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: var(--border-radius-sm);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+.nav-item.active {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+.nav-icon {
+    opacity: 0.7;
+}
+
+.nav-item:hover .nav-icon,
+.nav-item.active .nav-icon {
+    opacity: 1;
+}
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 8px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: var(--border-radius-md);
+    background: var(--bg-tertiary);
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--accent-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.user-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-status {
+    font-size: 0.7rem;
+    color: #4ade80;
+}
