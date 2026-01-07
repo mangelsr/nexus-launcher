@@ -22,14 +22,9 @@
 }
 
 .logo-icon {
-    width: 32px;
-    height: 32px;
+    width: 64px;
+    height: 64px;
     border-radius: var(--border-radius-sm);
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/31/Epic_Games_logo.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: invert(1);
 }
 
 .logo-text {

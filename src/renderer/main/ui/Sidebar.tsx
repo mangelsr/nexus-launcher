@@ -1,6 +1,7 @@
-import React from 'react';
 import { Home, Library, ShoppingBag, Download, Settings, User, Search } from 'lucide-react';
 import './Sidebar.css';
+
+import logo from '@/assets/images/logo.png';
 
 export function Sidebar() {
     const navItems = [
@@ -14,7 +15,7 @@ export function Sidebar() {
         <div className="sidebar">
             <div className="sidebar-header">
                 <div className="logo-container">
-                    <div className="logo-icon glass"></div>
+                    <img src={logo} alt="Nexus Logo" className="logo-icon" />
                     <span className="logo-text gradient-text">Nexus</span>
                 </div>
 
