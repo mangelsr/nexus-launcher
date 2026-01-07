@@ -1,8 +1,8 @@
 {
-  "name": "my-new-app",
-  "productName": "my-new-app",
+  "name": "nexus-launcher",
+  "productName": "Nexus Launcher",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "A high-performance Electron game launcher featuring a robust download manager, real-time progress tracking, and a modern React-based UI.",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",

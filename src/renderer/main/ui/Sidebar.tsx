@@ -15,7 +15,7 @@ export function Sidebar() {
             <div className="sidebar-header">
                 <div className="logo-container">
                     <div className="logo-icon glass"></div>
-                    <span className="logo-text gradient-text">Launcher</span>
+                    <span className="logo-text gradient-text">Nexus</span>
                 </div>
 
                 <div className="search-container glass">
